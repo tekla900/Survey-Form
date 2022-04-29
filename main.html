@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+        <div id="container">
+        <h1>Careers in Coding</h1>
+        <p>This form is designed for Freecodecamp course</p>
+        <form action="">
+            <fieldset>
+                <label>Enter Your Full Name: <input type="text" name='first-name' required/></label>
+                <label>Enter Your Email: <input type="email" name='email' required/></label>
+                <label>Enter Your Age (years): <input type="number" min="13" max="120" name='age' placeholder="Number of Years" required/></label>
+                <label>Employment Status: Are you currently…? 
+                    <select name="employement-status"> 
+                        <option value=""></option>
+                        <option value="1">Student</option>
+                        <option value="2">Employed Full Time</option>
+                        <option value="3">Employed Half Time</option>
+                        <option value="4">Currently Unemployed</option>
+                    </select>
+            </fieldset>
+
+            
+            <fieldset>
+                <p class="info">Which programming languages do you know?</p>
+                <label><input class='inline' type="checkbox" name="skills"> Python</label>
+                <label><input class='inline' type="checkbox" name="skills"> C++</label>
+                <label><input class='inline' type="checkbox" name="skills"> Java</label>
+                <label><input class='inline' type="checkbox" name="skills"> C#</label>
+                <label><input class='inline' type="checkbox" name="skills"> PHP</label>
+                <label><input class='inline' type="checkbox" name="skills"> JavaScript</label>
+                <label><input class='inline' type="checkbox" name="skills"> Kotlin</label>
+                <label><input class='inline' type="checkbox" name="skills">HTML&CSS</label>
+
+                <p class="info">In Which Field Do You Work?</p>
+                <label><input class='inline' type="radio" name="career-path"> Computer Science</label>
+                <label><input class='inline' type="radio" name="career-path"> Web Development</label>
+                <label><input class='inline' type="radio" name="career-path"> Game Develompment</label>
+                <label><input class='inline' type="radio" name="career-path"> Cybersecurity</label>
+                <label><input class='inline' type="radio" name="career-path"> Data Visualisation</label>
+                <label><input class='inline' type="radio" name="career-path"> Mobile Develompment</label>
+                <label><input class='inline' type="radio" name="career-path"> Machine Learning</label>
+            </fieldset>
+
+            <fieldset>
+                <label>Tell Us More: 
+                    <textarea rows="3" cols="30" placeholder="Enter Text Here..."></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit" >
+        </form>
+        </div>
+    </body>
+</html>
